@@ -24,6 +24,7 @@ namespace DevStation.Infrastructure
             return jobs;
         }
 
+        // searches the database 
         public IQueryable<Job> SearchJobs(string searchTerm)
         {
             return (from j in _db.Jobs

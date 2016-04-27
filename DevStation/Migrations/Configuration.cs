@@ -191,6 +191,7 @@ namespace DevStation.Migrations
 
                 };
 
+
             context.Jobs.AddOrUpdate(j => j.Title, jobs);
 
             context.SaveChanges();
